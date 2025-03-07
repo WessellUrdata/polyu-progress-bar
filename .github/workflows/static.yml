@@ -34,7 +34,7 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
       - name: Run Build
-        run: bun install && bun run build
+        run: bun install && bun run build --base=/polyu-progress-bar
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
