@@ -3,10 +3,6 @@
 
   const { name, startDate, endDate } = $props();
 
-  function dateToISODate(date: string) {
-    return dayjs(date).format("YYYY-MM-DD");
-  }
-
   const totalTime = dayjs(endDate).diff(dayjs(startDate), "millisecond");
 
   let currentTime = $state(dayjs());
